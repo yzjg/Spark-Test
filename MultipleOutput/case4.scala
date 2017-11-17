@@ -56,7 +56,7 @@ object  case4{
         
         
         //递归删除文件夹
-        deleteDir(tmpPath:String,fileSystem:FileSystem):Unit={
+       def   deleteDir(tmpPath:String,fileSystem:FileSystem):Unit={
             if(fileSystem.exists(new  Path(tmpPath))){
               fileSystem.delete(new  Path(tmpPath),true)
             }
